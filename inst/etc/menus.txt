@@ -1,0 +1,13 @@
+# type menu/item operation/parent label command/menu activation install?
+menu myClassMenu topMenu "" "" "" ""
+menu myDataMenu myClassMenu "" "" "" ""
+menu myPlotsMenu myClassMenu "" "" "" ""
+
+item myDataMenu command "Generate Normal Data" generateNormalData "" ""
+item myDataMenu command "Generate Two-Group Data" generateTwoGroupData "" ""
+
+item myPlotsMenu command "Mean Plot (Enhanced)" meanPlotEnhanced "" ""
+
+item topMenu cascade "MyClass" myClassMenu "" ""
+item myClassMenu cascade "Data" myDataMenu "" ""
+item myClassMenu cascade "Plots" myPlotsMenu "" ""

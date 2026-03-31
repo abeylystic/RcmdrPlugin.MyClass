@@ -1,0 +1,12 @@
+Package: RcmdrPlugin.MyClass
+Title: R Commander Plugin for My Class
+Version: 0.1.0
+Authors@R: 
+    person("Abiodun", "Idowu", email = "aidowu@augusta.edu", role = c("aut", "cre"))
+Description: Custom menus and teaching tools for use in R Commander.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: Rcmdr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
